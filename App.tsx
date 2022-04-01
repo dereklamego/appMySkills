@@ -1,18 +1,24 @@
 import { BackgroundColor } from 'chalk';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StatusBar } from 'react-native';
-import {Home} from './src/pages/Home';
+import { Home } from './src/pages/Home';
+import SplashScreen from 'react-native-splash-screen';
 
-export default function App(){
- 
+
+
+export default function App() {
+  useEffect(() => {
+    SplashScreen.hide();
+  }, [])
+
   return (
     <>
-      <StatusBar 
+      <StatusBar
         backgroundColor="#121015"
         barStyle="light-content"
       />
-      <Home/> 
+      <Home />
     </>
   )
- 
+
 }
