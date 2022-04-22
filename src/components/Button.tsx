@@ -25,6 +25,7 @@ export function Button({title,...rest}:ButtonProps){
     )
 }
 
+
 const styles = StyleSheet.create({
     button:{
         backgroundColor: '#A370f7',
